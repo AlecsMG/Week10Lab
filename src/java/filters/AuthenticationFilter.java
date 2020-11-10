@@ -30,7 +30,6 @@ public class AuthenticationFilter implements Filter {
             FilterChain chain)
             throws IOException, ServletException {
 
-        // code that is executed before servlet
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         HttpSession session = httpRequest.getSession();
         String email = (String) session.getAttribute("email");
